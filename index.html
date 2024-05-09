@@ -75,17 +75,26 @@
         </a>
     </div>
 
-    <!-- Audio element to play honk sound -->    
+    <!-- Audio element to play honk sound -->
     <audio id="honkSound">
-        <source src="audio/honk.mp3" type="audio/mpeg">
+        <source src="honk.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <!-- JavaScript to play honk sound when logo is clicked -->
+    <!-- JavaScript to play honk sound when logo is clicked and navigate to new page afterwards -->
     <script>
-        document.getElementById('logoLink').addEventListener('click', function() {
-            document.getElementById('honkSound').play();
-        });   
+        document.getElementById('logoLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default navigation behavior
+
+            // Play the honk sound
+            var audio = document.getElementById('honkSound');
+            audio.play();
+
+            // After the sound has finished playing, navigate to the new page
+            audio.onended = function() {
+                window.location.href = "party.html";
+            };
+        });
     </script>
 
     </div>
