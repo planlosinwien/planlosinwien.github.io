@@ -70,20 +70,20 @@
         </div>
         <p>Das wars.</p>
         <div class="logo">
-        <a href="party.html" id="logoLink">
-            <img src="img/logo.png" alt="Planlos in Wien Logo" width="200" id="logoImage">
-        </a>
-    </div>
+            <a href="party.html" id="logoLink">
+                <img src="img/logo.png" alt="Planlos in Wien Logo" width="200" id="logoImage">
+            </a>
+        </div>
 
-    <!-- Audio element to play honk sound -->
-    <audio id="honkSound">
-        <source src="honk.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+        <!-- Audio element to play honk sound -->
+        <audio id="honkSound">
+            <source src="audio/honk.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-    <!-- JavaScript to play honk sound when logo is clicked and navigate to new page afterwards -->
-    <script>
-        document.getElementById('logoLink').addEventListener('click', function(event) {
+        <!-- JavaScript to play honk sound when logo is clicked and navigate to new page afterwards -->
+        <script>
+            document.getElementById('logoLink').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default navigation behavior
 
             // Play the honk sound
