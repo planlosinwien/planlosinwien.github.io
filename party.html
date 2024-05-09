@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planlos in Wien</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #000;
+            border: 5px double #00f;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            position: relative; /* Make the container position relative for absolute positioning of elements inside */
+        }
+
+        h1 {
+            color: #ff0;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #00f;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .social-links a:hover {
+            background-color: #0ff;
+        }
+
+        .logo {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .blink {
+            animation: blinker 0.5s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        
+        .cheesy-images {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .cheesy-images img {
+            margin: 0 10px;
+            max-width: 150px;
+            /* Removed border styling */
+        }
+        
+        /* Positioning the visitor counter */
+        .visitor-counter {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        /* Container for aligning text and hot gifs */
+        .text-hot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="blink">Planlos in Wien</h1>
+        <!-- Container for aligning text and hot gifs -->
+        <div class="text-hot-container">
+            <img src="img/hot.gif" alt="Spinning Hot GIF">
+            <p>Grüß Gott und herzlich willkommen auf unserer Megacoolen Website! Hier geht's voll ab, wie in den guten alten 90ern, Mann! Schnapp dir 'ne Dose Red Bull und lass uns abgehen wie die Wildecker Herzbuben!</p>
+            <img src="img/hot.gif" alt="Spinning Hot GIF">
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank">ICQ</a>
+            <a href="#" target="_blank">Napster</a>
+            <a href="#" target="_blank">StudiVZ-Gruppe</a>
+        </div>
+        <div class="cheesy-images">
+            <img src="img/mail.gif" alt="mail GIF">
+            <img src="img/mail.gif" alt="mail GIF">
+            <img src="img/mail.gif" alt="mail GIF">
+            <img src="img/mail.gif" alt="mail GIF">
+            <img src="img/mail.gif" alt="mail GIF">
+        </div>
+        <p>Check mal unser ultrafettes Logo unten aus:</p>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/shitty_logo.png" alt="Planlos in Wien Logo" width="200">
+            </a>
+        </div>
+
+		<div class="cheesy-images">
+            <img src="img/under_construction.gif" alt="Under Construction GIF">
+            <img src="img/under_construction.gif" alt="Under Construction GIF">
+            <img src="img/under_construction.gif" alt="Under Construction GIF">
+            <img src="img/under_construction.gif" alt="Under Construction GIF">
+        </div>
+        <p>Hier kommen noch geile Dinge hin!</p>
+        <!-- Visitor Counter positioned using .visitor-counter class -->
+
+        <div class="cheesy-images">
+            <img src="img/loading.gif" alt="loading GIF">
+        </div>
+        <div class="visitor-counter">
+            <img src="img/visitor_counter.gif" alt="Visitor Counter GIF">
+        </div>
+    </div>
+</body>
+</html>
