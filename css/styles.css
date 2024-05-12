@@ -11009,7 +11009,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(175, 32, 0, 0.9);
+  background-color: rgba(190, 40, 5, 0.78);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
