@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <meta name="description" content="Die ur tolle Website von Planlos in Wien" />
+        <meta name="author" content="Stefan Lauer" />
+        <title>Planlos in Wien</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -16,25 +16,33 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+	
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Planlos in Wien</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#top">Top</a></li>
+						<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#band">Band</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#musik">Musik</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#galerie">Galerie</a></li>
+						<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#termine">Termine</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Kontakt</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#presse">Presse</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+		
         <!-- Masthead-->
+        <section class="top" id="top">
+		</section>
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
@@ -51,11 +59,111 @@
                 <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
             </div>
         </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+		
+        <!-- Band Section-->
+        <section class="page-section mb-0" id="band">
+            <div class="container">
+                <!-- Band Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Band</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Band Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Wir sind Planlos in Wien. Wir machen Lieder - meistens zu zweit - manchmal auch mehr. Meistens auf Deutsch - manchmal auf Englisch - meistens auf Wienerisch. <br><br>
+					Und meistens is es eh lustig.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Wie komm ich in der Nacht heim, wenn ich angsoffen bin?
+					Wer ist Marie? Und warum will sie nicht auf mein Konto?
+					Und wer geht mir eigentlich wirklich am Oasch? 
+					Diese und weitere hochphilosophische Fragen werden bei unseren Konzerten beantwortet.</p></div>
+                </div>
+                <!-- Band Section Button-->
+                <!-- TODO: Modals für die Bandmember-->
+            </div>
+        </section>
+		
+        <!-- Musik Section-->
+        <section class="page-section bg-primary text-white mb-0 portfolio" id="musik">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Musik</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		
+		
+
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="galerie">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Galerie</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -121,31 +229,46 @@
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+		
+        <!-- Termine Section-->
+        <section class="page-section bg-primary text-white mb-0" id="termine">
             <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Termine Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Termine</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Content-->
+                <!-- Termine Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-1 ms-auto"><p class="lead">01.08.2024</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Dasisteineadressestr. 12/3, 1240 Wien</p></div>
+                    <div class="col-lg-6 ms-auto"><p class="lead">Das ist der 1.Termin bei dem wir spielen. Mit ein bisserl einer Beschreibung dabei. Die auch länger sein kann. Zum Beispiel 4 Sätze. Oder 5. Oder im Ausnahmefall könnnen es sogar bis zu sieben sein! Mehr aber nicht.</p></div>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
+				
+                <div class="row">
+                    <div class="col-lg-1 ms-auto"><p class="lead">01.09.2024</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Kurze Gasse 1/2, 1240 Wien</p></div>
+                    <div class="col-lg-6 ms-auto"><p class="lead">Das ist der 2.Termin bei dem wir spielen. Mit ein bisserl einer Beschreibung dabei. Kann auch nur 3 Sätze lang sein.</p></div>
+                </div>
+				
+                <div class="row">
+                    <div class="col-lg-1 ms-auto"><p class="lead">01.10.2024</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Sehrsehrsehrsehrsehrlangestraße 123/45, 1240 Wien</p></div>
+                    <div class="col-lg-6 ms-auto"><p class="lead">Das ist der 3.Termin bei dem wir spielen. Mit ein bisserl einer Beschreibung dabei. Die auch länger sein kann. Zum Beispiel 4 Sätze. Im durschnitt sind es fünf.</p></div>
+                </div>
+				
+                <div class="row">
+                    <div class="col-lg-1 ms-auto"><p class="lead">01.11.2024</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Mittlerestraßengasse 12/3, 1240 Wien</p></div>
+                    <div class="col-lg-6 ms-auto"><p class="lead">Das ist der 4.Termin bei dem wir spielen. Die Beschriebung ist ur kurz.</p></div>
                 </div>
             </div>
         </section>
+		
+		
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -217,6 +340,34 @@
                 </div>
             </div>
         </section>
+		
+		
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="presse">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Presse</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="text-center mt-4"><p class="lead">Pressefotos / Pressetext steht über den Button zur Verfügung</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+						Pressematerial
+                    </a>
+                </div>
+            </div>
+        </section>
+		
+		
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -254,6 +405,8 @@
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
         </div>
+		
+		
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
