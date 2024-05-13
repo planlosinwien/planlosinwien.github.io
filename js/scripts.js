@@ -83,9 +83,7 @@ window.addEventListener('DOMContentLoaded', event => {
 			return;
 		}
 
-		// Validate phone format (optional)
-		// You can customize this regex based on your phone number format
-		var phoneRegex = /^[\d/]+$/; // Example: 1234567890
+		var phoneRegex = /^[\d/]+$/; 
 		if (!phoneRegex.test(phone)) {
 			alert('Invalid phone number format!');
 			return;
