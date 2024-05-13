@@ -93,8 +93,9 @@ window.addEventListener('DOMContentLoaded', event => {
             return;
         }
 
-        if (phone === '') {
-            alert('Phone number is required!');
+		/*  
+		if (phone === '') {
+            alert('Phone number is required for this form! (you can write any mail to absolute.planlosigkeit@gmail.com)');
             return;
         }
 
@@ -103,7 +104,8 @@ window.addEventListener('DOMContentLoaded', event => {
             alert('Invalid phone number format!');
             return;
         }
-
+		*/
+		
         if (message === '') {
             alert('Message is required!');
             return;
