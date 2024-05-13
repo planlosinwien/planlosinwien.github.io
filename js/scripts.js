@@ -51,4 +51,75 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Validate form fields
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var phone = document.getElementById('phone').value.trim();
+        var message = document.getElementById('message').value.trim();
+
+		if (name === '') {
+			alert('Name is required!');
+			return;
+		}
+
+		if (email === '') {
+			alert('Email is required!');
+			return;
+		}
+
+		// Validate email format
+		var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!emailRegex.test(email)) {
+			alert('Invalid email format!');
+			return;
+		}
+
+		if (phone === '') {
+			alert('Phone number is required!');
+			return;
+		}
+
+		// Validate phone format (optional)
+		// You can customize this regex based on your phone number format
+		var phoneRegex = /^[\d/]+$/; // Example: 1234567890
+		if (!phoneRegex.test(phone)) {
+			alert('Invalid phone number format!');
+			return;
+		}
+
+		if (message === '') {
+			alert('Message is required!');
+			return;
+		}
+
+
+        // Prepare form data
+        var formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('phone', phone);
+        formData.append('message', message);
+
+        // Send form data to Formspree
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://formspree.io/f/meqydzpl', true); 
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onload = function() {
+            if (xhr.status === 200 || xhr.status === 201) {
+                alert('Email sent successfully!');
+                // Optionally, you can reset the form after successful submission
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Error sending email. Please try again later.');
+            }
+        };
+        xhr.onerror = function() {
+            alert('Error sending email. Please try again later.');
+        };
+        xhr.send(formData);
+    });
 });
