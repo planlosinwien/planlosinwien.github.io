@@ -6,7 +6,6 @@
 //
 // Scripts
 // 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -51,6 +50,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Function to stop YouTube video when modal is closed
+    function stopYouTubeVideo(modalId) {
+        var iframe = document.getElementById(modalId + 'Video');
+        var iframeSrc = iframe.src;
+        iframe.src = iframeSrc; // Reloads the iframe, stopping the video
+    }
+
+    // Event listener to stop YouTube video when modal is closed
+    var modals = document.querySelectorAll('.portfolio-modal');
+    modals.forEach(function(modal) {
+        modal.addEventListener('hidden.bs.modal', function() {
+            var modalId = modal.getAttribute('id');
+            stopYouTubeVideo(modalId);
+        });
+    });
+
     // Form submission
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
@@ -61,38 +76,38 @@ window.addEventListener('DOMContentLoaded', event => {
         var phone = document.getElementById('phone').value.trim();
         var message = document.getElementById('message').value.trim();
 
-		if (name === '') {
-			alert('Name is required!');
-			return;
-		}
+        if (name === '') {
+            alert('Name is required!');
+            return;
+        }
 
-		if (email === '') {
-			alert('Email is required!');
-			return;
-		}
+        if (email === '') {
+            alert('Email is required!');
+            return;
+        }
 
-		// Validate email format
-		var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (!emailRegex.test(email)) {
-			alert('Invalid email format!');
-			return;
-		}
+        // Validate email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Invalid email format!');
+            return;
+        }
 
-		if (phone === '') {
-			alert('Phone number is required!');
-			return;
-		}
+        if (phone === '') {
+            alert('Phone number is required!');
+            return;
+        }
 
-		var phoneRegex = /^[\d/]+$/; 
-		if (!phoneRegex.test(phone)) {
-			alert('Invalid phone number format!');
-			return;
-		}
+        var phoneRegex = /^[\d/]+$/; 
+        if (!phoneRegex.test(phone)) {
+            alert('Invalid phone number format!');
+            return;
+        }
 
-		if (message === '') {
-			alert('Message is required!');
-			return;
-		}
+        if (message === '') {
+            alert('Message is required!');
+            return;
+        }
 
 
         // Prepare form data
