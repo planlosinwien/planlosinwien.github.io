@@ -11044,3 +11044,50 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.text-over-image {
+    position: absolute;
+    top: 5%; /* Platzierung des Textes in der vertikalen Mitte des Bildes */
+    left: 50%; /* Platzierung des Textes in der horizontalen Mitte des Bildes */
+    transform: translate(-50%, -50%); /* Zentrierung des Textes relativ zum Bild */
+    background-color: rgba(255, 255, 255); /* Hintergrundfarbe des Textes */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    max-width: 80%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+@media (max-width: 575.98px) {
+	iframe {
+		height: 300px !important;
+	}
+}
+@media (min-width: 576px) {
+	iframe {
+		height: 350px !important;
+	}
+}
+@media (min-width: 768px) {
+	iframe {
+		height: 380px !important;
+	}
+}
+@media (min-width: 992px) {
+	iframe {
+		height: 400px !important;
+	}
+}
+@media (min-width: 1200px) {
+	iframe {
+		height: 450px !important;
+	}
+}
+@media (min-width: 1400px) {
+	iframe {
+		height: 480px !important;
+	}
+}
