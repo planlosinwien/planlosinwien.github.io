@@ -11073,31 +11073,59 @@ html {
   background-color: #1a252f;
 }
 
-.text-over-image .text-over-image-bot .text-over-wh-image .text-over-wh-image-bot {
+.text-over-image {
     position: absolute;
     left: 50%;
+    top: 5%; /* Platzierung des Textes vertikal */
     transform: translate(-50%, -50%); /* Zentrierung des Textes relativ zum Bild */
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
     max-width: 80%;
     text-align: center;
-}
-
-.text-over-image .text-over-wh-image {
-    top: 5%; /* Platzierung des Textes in der vertikal */
-}
-
-.text-over-wh-image .text-over-wh-image-bot {
-    top: 95%; 
-}
-
-.text-over-image .text-over-image-bot {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.text-over-wh-image .text-over-wh-image-bot {
+.text-over-wh-image {
+    position: absolute;
+    left: 50%;
+    top: 5%; /* Platzierung des Textes vertikal */
+    transform: translate(-50%, -50%); /* Zentrierung des Textes relativ zum Bild */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    max-width: 80%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.text-over-image-bot {
+    position: absolute;
+    left: 50%;
+    top: 95%; /* Platzierung des Textes vertikal */
+    transform: translate(-50%, -50%); /* Zentrierung des Textes relativ zum Bild */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    max-width: 80%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+ .text-over-wh-image-bot {
+    position: absolute;
+    left: 50%;
+    top: 95%; /* Platzierung des Textes vertikal */
+    transform: translate(-50%, -50%); /* Zentrierung des Textes relativ zum Bild */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    max-width: 80%;
+    text-align: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.text-over-wh-image .text-over-wh-image-bot {
 }
 
 @media (max-width: 575.98px) {
