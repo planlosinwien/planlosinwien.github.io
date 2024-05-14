@@ -11073,7 +11073,7 @@ html {
   background-color: #1a252f;
 }
 
-.text-over-image .text-over-image-bot .text-over-wh-image .text-over-wh-image-bot{
+.text-over-image .text-over-image-bot .text-over-wh-image .text-over-wh-image-bot {
     position: absolute;
     top: 5%; /* Platzierung des Textes in der vertikal */
     left: 50%; /* Platzierung des Textes in der horizontal*/
@@ -11086,11 +11086,11 @@ html {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.text-over-wh-image .text-over-wh-image-bot{
+.text-over-wh-image .text-over-wh-image-bot {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-.text-over-wh-image-bot .text-over-wh-image-bot{
+.text-over-wh-image-bot .text-over-wh-image-bot {
     position: absolute;
     top: 95%; 
     left: 50%;
