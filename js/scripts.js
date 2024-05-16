@@ -57,18 +57,22 @@ window.addEventListener('DOMContentLoaded', event => {
         iframe.src = iframeSrc; // Reloads the iframe, stopping the video
     }
 
-    // Event listener to stop YouTube video when modal is closed
+    // Event listener to stop YouTube video when modal is closed and lazy image loading
     var modals = document.querySelectorAll('.portfolio-modal');
     modals.forEach(function(modal) {
-        modal.addEventListener('shown.bs.modal', function() {
-            var $image = $(this).find('img.lazyload');
-            var src = $image.data('src');
-            $image.attr('src', src);
-        });
-        modal.addEventListener('hidden.bs.modal', function() {
-            var modalId = modal.getAttribute('id');
-            stopYouTubeVideo(modalId);
-        });
+		modal.addEventListener('shown.bs.modal', function () {
+			$(this).find('.lazyload').each(function() {
+				var $element = $(this);
+				var src = $element.data('src');
+				if (src) {
+					$element.attr('src', src);
+				}
+			});
+		});
+		modal.addEventListener('hidden.bs.modal', function() {
+			var modalId = modal.getAttribute('id');
+			stopYouTubeVideo(modalId);
+		});
     });
 
     // Form submission
