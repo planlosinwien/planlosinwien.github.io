@@ -60,6 +60,11 @@ window.addEventListener('DOMContentLoaded', event => {
     // Event listener to stop YouTube video when modal is closed
     var modals = document.querySelectorAll('.portfolio-modal');
     modals.forEach(function(modal) {
+        modal.addEventListener('shown.bs.modal', function() {
+            var $image = $(this).find('img.lazyload');
+            var src = $image.data('src');
+            $image.attr('src', src);
+        });
         modal.addEventListener('hidden.bs.modal', function() {
             var modalId = modal.getAttribute('id');
             stopYouTubeVideo(modalId);
