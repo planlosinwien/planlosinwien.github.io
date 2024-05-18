@@ -11164,3 +11164,25 @@ html {
 		height: 480px !important;
 	}
 }
+
+
+/* Common parallax class */
+.parallax-bg {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#band {
+    background-image: url('../assets/img/background/bg_gloriette.jpg');
+}
+
+#musik {
+    background-image: url('../assets/img/background/bg_stephldach.jpg');
+}
+
+#contact {
+    background-image: url('../assets/img/background/bg_prater.jpg');
+}
