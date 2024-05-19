@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planlos in Wien</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 8px 12px;
+            color: #fff;
+            background-color: #8B0000; /* Dunkelrot */
+            border-radius: 5px;
+            text-decoration: none;
+            max-width: calc(33.33% - 10px); /* 33.33% Breite für gleichmäßige Verteilung auf mobilen Geräten */
+            box-sizing: border-box;
+        }
+
+        .social-links a:hover {
+            background-color: #800000; /* Dunkleres Rot */
+        }
+
+        .logo {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planlos in Wien</h1>
+        <p>Wir sind Planlos in Wien aus Wien. Jetzt mit eigener Homepage. Jetzt kommen die ganzen Links oida!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/planlos_in_wien/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/planlosinwien/" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/@PlanlosInWien" target="_blank">YouTube</a>
+        </div>
+        <p>Das wars.</p>
+        <div class="logo">
+            <a href="party.html" id="logoLink">
+                <img src="images/logo.png" alt="Planlos in Wien Logo" width="200" id="logoImage">
+            </a>
+        </div>
+
+        <!-- Audio element to play honk sound -->
+        <audio id="honkSound">
+            <source src="audio/honk.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- JavaScript to play honk sound when logo is clicked and navigate to new page afterwards -->
+        <script>
+            document.getElementById('logoLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default navigation behavior
+
+            // Play the honk sound
+            var audio = document.getElementById('honkSound');
+            audio.play();
+
+            // After the sound has finished playing, navigate to the new page
+            audio.onended = function() {
+                window.location.href = "party.html";
+            };
+        });
+    </script>
+
+    </div>
+</body>
+</html>
