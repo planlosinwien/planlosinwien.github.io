@@ -11198,3 +11198,7 @@ html {
   opacity: 1;
   font-size: 1.5rem;
 }
+
+.not-really-a-portfolio-item-doe {
+  cursor: default !important;
+}
