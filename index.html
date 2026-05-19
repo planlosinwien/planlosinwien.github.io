@@ -196,6 +196,10 @@
 			  })
 			  .then(html => {
 				document.getElementById('termine-container').innerHTML = html;
+				const scrollSpyInstance = bootstrap.ScrollSpy.getInstance(document.body);
+				if (scrollSpyInstance) {
+					scrollSpyInstance.refresh();
+				}
 			  })
 			  .catch(error => {
 				console.error('Error loading Termine:', error);
