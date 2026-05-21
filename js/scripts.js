@@ -75,6 +75,18 @@ window.addEventListener('DOMContentLoaded', event => {
 		});
     });
 
+    // Open modal automatically from URL hash
+    const hash = window.location.hash;
+
+    if (hash) {
+        const modalElement = document.querySelector(hash);
+
+        if (modalElement && modalElement.classList.contains('modal')) {
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+        }
+    }
+
     // Form submission
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
